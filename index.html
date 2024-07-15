@@ -25,6 +25,13 @@
             width: 600px;
             /* border: 1px solid black; */
         }
+        .mainchild{
+            display: flex;
+            justify-content: center;
+           
+            height: fit-content;
+            /* border: 2px solid black; */
+        }
 
         .main_image {
          
@@ -58,6 +65,7 @@
             height: 80px;
             width: 80px;
             border: 1px solid black;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -66,16 +74,19 @@
     <div class="container">
        
         <div class="child">
-            <img src="./img1.jpg" alt="img" class="main_image">
+
+            <div class="mainchild">
+            <img src="./img1.jpg" alt="img" class="main_image" id="main_image">
+            </div>
 
 
             
         <div class="boxes">
-           <img src="./img1.jpg" alt="" class="box">
-           <img src="./img2.jpg" alt=""class="box">
-           <img src="./img3.jpg" alt=""class="box">
-           <img src="./img4.jpg" alt=""class="box">
-           <img src="./img5.jpg" alt=""class="box">
+           <img src="./img1.jpg" alt="" class="box" onclick="imagechange('img1.jpg')">
+           <img src="./img2.jpg" alt=""class="box"  onclick="imagechange('img2.jpg')">
+           <img src="./img3.jpg" alt=""class="box" onclick="imagechange('img3.jpg')">
+           <img src="./img4.jpg" alt=""class="box" onclick="imagechange('img4.jpg')">
+           <img src="./img5.jpg" alt=""class="box" onclick="imagechange('img5.jpg')">
 
     </div>
         </div>
@@ -94,6 +105,15 @@
 
 
     </div>
+
+    <script>
+        function imagechange( imagename){
+            const mainimg = document.getElementById('main_image');
+            mainimg.src = imagename;
+
+
+        }
+    </script>
 
 </body>
 
