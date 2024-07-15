@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>
+        Product Preview
+    </title>
+
+    <style>
+        .container {
+            margin: 50px auto;
+            height: 1000px;
+            width: 1200px;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .child{
+            height: 900px;
+            width: 600px;
+            /* border: 1px solid black; */
+        }
+
+        .main_image {
+            margin-top: 100px;
+            height: 400px;
+        }
+        #para{
+           
+            margin-top: 100px;
+            width: 400px;
+            /* border: 1px solid black; */
+            font-size: 30px;
+        }
+        #mrp{
+            margin-top: -30px;
+            display: flex;
+            font-size: 30px;
+        }
+        .boxes{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 50px auto;
+            height: 100px;
+            width: 480px;
+            /* border: 1px solid black; */
+        }
+        .box{
+            border-radius: 10px;
+            height: 80px;
+            width: 80px;
+            border: 1px solid black;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body>  
+    <div class="container">
+       
+        <div class="child">
+            <img src="./img1.jpg" alt="img" class="main_image">
+
+
+            
+        <div class="boxes">
+           <img src="./img1.jpg" alt="" class="box">
+           <img src="./img2.jpg" alt=""class="box">
+           <img src="./img3.jpg" alt=""class="box">
+           <img src="./img4.jpg" alt=""class="box">
+           <img src="./img5.jpg" alt=""class="box">
+
+    </div>
+        </div>
+        <div class="child">
+            <p id="para">
+                ASUS ROG Strix G17 (2022) Gaming Laptop,AMD Ryzen 7-6800HS,17.3-inch (43.94 cms) FHD 144Hz, RTX 3050 4GB
+                Graphics,(16GB RAM/512GB SSD/Windows 11/Gray/2.5 Kg),G713RC-HX109WS
+            </p>
+            <hr>
+            <div id="mrp">
+                  <p style="margin-right: 5px; color: #cf4a69;" >-31%</p>
+                  <p>₹78,990</p>
+            </div>
+            <p style=" margin-top: -25px;">M.R.P: <del>₹1,13,990</del> </p>
+        </div>
+
+
+    </div>
+
 </body>
+
 </html>
